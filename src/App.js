@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className={`w-full min-h-screen bg-${isDarkMode ? 'gray' : 'white'}-900`}>
+    <div className={`w-full  min-h-screen bg-${isDarkMode ? 'gray' : 'white'}-900`}>
       {/* Header section */}
       <div className='bg-gray-500 py-2 px-0 flex items-center justify-center gap-3'>
         <div className="w-10">
@@ -38,11 +38,11 @@ function App() {
           {isDarkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
       </div>
-      <div className='flex mt-[100px] justify-center gap-20'>
+      <div className='flex mt-[100px] lg:flex-row md:flex-row xs:flex-col-reverse xs:-mb-[20px] justify-center gap-20'>
         {/* Form to add a new movie */}
         <MovieForm addMovie={addMovie} isDarkMode={isDarkMode} />
 
-        <div className="px-4  w-[38%]">
+        <div className="px-4 xs:w-[90%] xs:m-auto lg:w-[38%] md:w-[38%]">
           {/* Search component */}
           <Search movies={movies} isDarkMode={isDarkMode} setFilteredMovies={setFilteredMovies} setSearched={setSearched} />
 

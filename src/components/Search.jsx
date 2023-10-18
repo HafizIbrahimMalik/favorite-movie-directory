@@ -25,7 +25,7 @@ const Search = ({ movies, setFilteredMovies, setSearched, isDarkMode }) => {
     }, [searchTerm, movies, setFilteredMovies, setSearched]);
 
     return (
-        <div className='w-[95%] m-auto'>
+        <div className='w-[95%]  m-auto'>
             <input
                 type="text"
                 placeholder="Search for a movie by name"

@@ -43,7 +43,7 @@ const MovieForm = ({ addMovie, isDarkMode }) => {
     };
 
     return (
-        <div className={`p-4 pb-10 shadow-lg flex flex-col w-[38%] h-max-content ${isDarkMode ? 'bg-slate-700' : 'bg-white-900'}`}>
+        <div className={`p-4 pb-10 shadow-lg flex xs:w-[90%] xs:m-auto flex-col lg:w-[38%] md:w-[38%] h-max-content ${isDarkMode ? 'bg-slate-700' : 'bg-white-900'}`}>
             <label htmlFor="movieName">Movie Name</label>
             <input
                 className={`bg-green-50 p-[5px] shadow-inner border-b-[2px] border-white focus:border-gray-500 outline-none mb-[10px] ${isDarkMode && "border-gray-900 text-gray-400 ring-1 ring-slate-800 shadow-xl"} bg-${isDarkMode ? 'gray' : 'white'}-900`}
